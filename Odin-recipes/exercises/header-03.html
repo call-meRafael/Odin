@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header - 03</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        header h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            gap: 3.25rem;
+
+            margin-top: 2rem;
+
+            & article {
+                max-width: 200px;
+                text-align: center;
+            }
+        }
+
+        
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Information!</h1>
+    </header>
+    <main>
+        <article>
+            <img class="barberry" src="./images/barberry.png" alt="barberry icon">
+            <p>
+                This is a type of plant. We love this one.
+            </p>
+        </article>
+
+        <article>
+            <img src="./images/chilli.png" alt="chilli icon">
+            <p>
+                This is another type of plant. Isn't it nice?
+            </p>
+        </article>
+
+        <article>
+            <img src="./images/pepper.png" alt="pepper icon">
+            <p>
+                We have so many plants. Yay plants.
+            </p>
+        </article>
+
+        <article>
+            <img src="./images/saffron.png" alt="saffron icon">
+            <p>
+                I'm running out of things to say about plants.
+            </p>
+        </article>
+    </main>
+</body>
+</html>

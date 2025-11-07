@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Modal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            height: 100%;
+            
+        }
+
+        body {
+            height: 100%;
+            display: flex;
+            
+            padding: 5rem;
+            background-color: rgba(153, 153, 153, 0.897);
+            font-family: 'Roboto', sans-serif;
+            
+
+
+        }
+
+        main {
+            margin: auto;
+        }
+
+        .modal {
+            display: flex;
+
+
+            width: 600px;
+            height: 250px;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.712);
+
+            transition: scale 1s ease-in-out;
+
+            & .alert {
+                width: 2.725rem;
+
+                & img {
+                    width: 2.725rem;
+
+                    transition: transform 0.2s ease-in-out;
+
+                    &:hover {
+                        width: 2.725rem;
+                        cursor: pointer;
+    
+                        transform: scale(1.1);
+                        transition: transform 0.2s ease-in-out; 
+                    }
+                }
+            }
+
+            & h1 {
+                font-size: 1.5rem;
+                /* margin-left: 1rem; */
+            }
+
+            & .cancel {
+                
+
+                & img {
+                    width: 1.5rem;
+                    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.212));
+
+                    transition: transform 0.2s ease-in-out;
+                }
+
+                & img:hover {
+                    cursor: pointer;
+
+                    transform: scale(1.1);
+                }
+            }
+            
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 8px;
+            gap: 1.725rem;
+
+            
+
+            & .buttons-container {
+                display: flex;
+                gap: 0.625rem;
+                
+                
+                & :nth-child(1) {
+                    background-color: royalblue;
+                    color: white;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+                }
+                & :nth-child(2) {
+                    background-color: white;
+                    color: royalblue;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+                }
+
+                & .btn {
+                    padding: 8px 24px;
+                    border-radius: 8px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.521);
+
+                    transition: transform 0.2s ease-in-out;
+                } 
+                & .btn:hover {
+                    cursor: pointer;
+                    
+
+                    transform: scale(1.1);
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="modal">
+            <div class="alert">
+                <img src="./images/circle-alert.svg" alt="">
+            </div>
+
+            <section class="hero-content">
+                <h1>Are you sure you want to do that?</h1>
+                <p>You might want to double check this option.This action cannot be undone and will delete all of your data from the system! Check your system to make sure you have a backup file before you proceed.
+                If you are sure you want to proceed, click the proceed button. If you want to cancel, click the cancel button.
+                </p>
+                <div class="buttons-container">
+                    <button class="btn">Proceed</button>
+                    <button class="btn">Cancel</button>
+                </div>
+            </section>
+
+            <div class="cancel">
+                <img src="./images/circle-x.svg" alt="">
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

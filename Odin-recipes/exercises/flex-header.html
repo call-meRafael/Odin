@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1280px;
+            text-transform: uppercase;
+            margin: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.3;
+            
+        }
+
+        .head-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            
+
+            max-width: 1280;
+            background-color: white;
+            padding: 0.25rem;
+            border: 2px dotted red;
+
+
+            & .nav-01 {
+                display: flex;
+                /* flex: 1 1 auto; */
+            }
+            
+            & .nav-01 ul li:nth-child(1) {
+                display: block;
+                background-color: bisque;
+                color: cornflowerblue;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
+            }
+            & .nav-01 ul li:nth-child(2) {
+                display: block;
+                background-color: bisque;
+                color: cornflowerblue;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
+            }
+            & .nav-01 ul li:nth-child(3) {
+                display: block;
+                background-color: bisque;
+                color: cornflowerblue;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
+            }
+
+            & .logo {
+                display: flex;
+                place-content: center;
+                place-items: center;
+                flex: 1 1 auto;
+
+                width: 150px;
+                background-color: bisque;
+                color: cornflowerblue;
+                font-size: 2rem;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.623);
+            }
+
+            & .nav-02 ul li:nth-child(1) {
+                display: block;
+                background-color: bisque;
+                color: cornflowerblue;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
+            }
+            & .nav-02 ul li:nth-child(2) {
+                display: block;
+                background-color: bisque;
+                color: cornflowerblue;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
+            }
+            & .nav-02 ul li:nth-child(3) {
+                display: block;
+                background-color: bisque;
+                color: cornflowerblue;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
+            }
+        }
+
+
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0.75rem;
+            gap: 1rem;
+            border: 2px dotted blue;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="head-container">
+
+        <nav class="nav-01">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            LOGO
+        </div>
+
+        <nav class="nav-02">
+            <ul>
+                <li>four</li>
+                <li>five</li>
+                <li>six</li>
+            </ul>
+        </nav>
+
+
+    </header>
+</body>
+</html>
