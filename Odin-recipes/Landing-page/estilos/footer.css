@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary-bg-color);
+
+    & p {
+        color: #f9faf8;
+        text-shadow: var(--shadow-m);
+        text-align: center;
+        font: 300 1.2rem/1.3 'Montserrat', sans-serif;
+    }
+}
