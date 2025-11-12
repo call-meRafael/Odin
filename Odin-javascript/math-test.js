@@ -14,23 +14,43 @@
 
 /* -------------Repeat Strings------------------- */
 
-function repeatString(string, times) {
-    switch (times) {
-        case 0:
-            '';
-            break;
-        case 1:
-            'Hello';
-            break;
-        case 2:
-            'HelloHello';
-            break;
-        case 3:
-            'HelloHelloHello';
-            break;
-        default:
-            console.log(string);
-    }
-}
+// function repeatString(string, times) {
+//     switch (times) {
+//         case 0:
+//             '';
+//             break;
+//         case 1:
+//             'Hello';
+//             break;
+//         case 2:
+//             'HelloHello';
+//             break;
+//         case 3:
+//             'HelloHelloHello';
+//             break;
+//         default:
+//             console.log(string);
+//     }
+// }
 
-console.log(repeatString('Hello', 3));
+// console.log(repeatString('Hello', 3));
+
+
+
+function add7(num) {
+    return num + 7;
+}
+console.log(add7(10));
+
+
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+console.log(multiply(3, 2));
+
+
+
+function capitalize(string) {
+    return string.toUpperCase();
+    
+}
